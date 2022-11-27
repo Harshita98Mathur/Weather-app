@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="Stylesheet" href="./Style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <h1> Weather Forcaste</h1>
+    <marquee behavior="alternate" direction="left">
+        <img src="./image/day.svg" class="image">
+        <img src="./image/night.svg" class="image">
+        <img src="./image/rainy-1.svg" class="image">
+        <img src="./image/rainy-6.svg" class="image">
+        <img src="./image/cloudy.svg" class="image">
+        <img src="./image/cloudy-night-3.svg" class="image">
+        <img src="./image/snowy-2.svg" class="image">
+        <img src="./image/thunder.svg" class="image"></marquee><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <div class="hero">
+                        <div class="InputBox">
+                            <header class="app">
+                        <input type="text" id="input-box" class="input-box" placeholder="Search for a city.." autocomplete="off">
+                        </header>
+                        </div>
+                        <!-- location-detail -->
+                        <div class="weatherBody">
+                                <div class="city" id="city">Jaipur, IN</div>
+                                <div class="date" id="date">28 October (Friday), 2022</div>
+                       </div>
+                        <h5 class="content">Coded  with :- <br> By Harshita Mathur</h5>
+                        </div>
+                </div> 
+                <div class="col-lg-6">
+                       <div class="weatherStatus">
+                           <div class="weather" id="weather">Clear</div>
+                           <div class="temp" id="temp">13&deg;C</div>
+                           <div class="mima" id="min-max">Minimun & Maximun temperature : 13&deg;C (min) / 16&deg;C (max)</div>
+                           <div class="hum" id="hum">Humidity : 13%</div>
+                           <div class="press" id="press">Pressure : 1015 mbar</div>
+                       </div>
+                   </div>   
+               </div>    
+            </div>
+        </div> 
+   </div> 
+   <script src="app.js"></script>    
+</body>
+</html>
